@@ -65,20 +65,22 @@ jobs:
         run: |
           check-manifest
 
-          - name: Coveralls
-            uses: AndreMiras/coveralls-python-action@develop
-            with:
-              parallel: true
-              flag-name: Test with pytest
+#          - name: Coveralls
+#            uses: AndreMiras/coveralls-python-action@develop
+#            with:
+#              parallel: true
+#              flag-name: Test with pytest
+#
 
-        coveralls_finish:
-          needs: build
-          runs-on: ubuntu-latest
-          steps:
-            - name: Coveralls Finished
-              uses: AndreMiras/coveralls-python-action@develop
-              with:
-                parallel-finished: true
+#
+#      -coveralls_finish:
+#          needs: build
+#          runs-on: ubuntu-latest
+#          steps:
+#            - name: Coveralls Finished
+#              uses: AndreMiras/coveralls-python-action@develop
+#              with:
+#                parallel-finished: true
 
       - name: Build package to publish
         run: |
