@@ -14,7 +14,7 @@ def sitemap_ext(app=None):
             index = x.published.rest['search_index']
             rest_name = x.published.rest_name
 
-            for url in search_class().source(includes=['id', '_primary_community', 'modified']):
+            for url in search_class(index=index).source(includes=['id', '_primary_community', 'modified']):
                 id = url.id
                 community = url._primary_community
 
