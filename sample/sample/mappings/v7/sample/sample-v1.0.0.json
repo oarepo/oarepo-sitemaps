@@ -1,0 +1,33 @@
+{
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text"
+      },
+      "_primary_community": {
+        "type": "keyword"
+      },
+      "state": {
+        "type": "keyword"
+      },
+      "_communities": {
+        "type": "keyword"
+      },
+      "$schema": {
+        "type": "keyword"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "created": {
+        "type": "date"
+      },
+      "modified": {
+        "type": "date"
+      },
+      "_updated": {
+        "type": "date"
+      }
+    }
+  }
+}

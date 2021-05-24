@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+
+include LICENSE
+recursive-exclude tests *.py
+exclude .coveragerc
+exclude .pydocstyle
+exclude Dockerfile
+exclude docker-compose
+exclude pytest.ini
+exclude *.yml
+exclude run-tests.sh
+exclude tests
+include *.rst
+include *.md
+include *.db
+
+recursive-include oarepo_sitemaps *.py
+recursive-include oarepo_sitemaps *.json
+recursive-include oarepo_sitemaps *.json
+recursive-include tests *.json
+recursive-include tests *.csv
+recursive-include included_mappings *.json
+recursive-include sample *.json
+recursive-include sample *.py
+recursive-include tests *.db
+
+

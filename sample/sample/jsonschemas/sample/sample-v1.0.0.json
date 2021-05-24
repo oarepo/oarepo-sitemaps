@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "allOf": [
+    {
+      "properties": {
+         "title": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    },
+      "state": {
+        "type": "string"
+      },
+    "control_number": {
+      "type": "string"
+    },
+    "_bucket": {
+      "type": "string"
+    },
+    "_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+      }
+    },
+    {
+      "$ref": "/schemas/communities-v1.0.0.json#/definitions/Communities"
+    }
+  ],
+  "additionalProperties": "false"
+}
